@@ -1,10 +1,3 @@
-/**
-* Template Name: Vesperr - v4.7.0
-* Template URL: https://bootstrapmade.com/vesperr-free-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -288,7 +281,108 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-mobile .dropdown > .dropdown-active {
   display: block;
 }
-
+/*--------------------------------------------------------------
+# Intro Section
+--------------------------------------------------------------*/
+#intro{
+	width: 100%;
+	margin-top: 100px;
+	height: 70vh;
+}
+#intro h1{
+	padding-left: 40px;
+	padding-top: 140px;
+	font-size: 50px;
+	font-weight: 700;
+	color: white;
+}
+#intro .filtro{
+  padding: 0;
+	margin: 0;
+	backdrop-filter: blur(3px);
+	border-radius: 12px;
+}
+#intro .intro_fondo{
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-size: cover;
+	background-color: black;
+	background-image: url(db_intro_img.jpg);
+	/*background-image: url(C:/Users/test123/Documents/CoricoCamde/Arcodein/web/assets/img/db_intro_img.jpg);*/
+	background-repeat:no-repeat;
+	background-position:center center;
+	box-shadow: 10px 10px 50px rgb(255, 255, 255);
+}
+#intro .inferior{
+	margin-top: 10px;
+	height: 100px;
+	background: rgb(255,255,255);
+	background: linear-gradient(0deg, 
+								rgba(255,255,255,1) 10%, 
+								rgba(255,255,255,0) 100%);
+	margin-top: 10vh;
+}
+#intro .animated {
+	animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+@media (min-width: 1024px) {
+    #intro {
+        background-attachment: fixed;
+    }
+}
+@media (max-width: 991px) {
+    #intro {
+        height: 100vh;
+    }
+    #intro .animated {
+        -webkit-animation: none;
+        animation: none;
+    }
+    #intro .intro-img {
+        text-align: center;
+    }
+    #intro .intro-img img {
+        width: 50%;
+    }
+}
+@media (max-width: 768px) {
+    #intro {
+        margin-top: 20px;
+    }
+    #intro h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    #intro h2 {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+    #intro .intro-img img {
+        width: 70%;
+    }
+}
+@media (max-width: 575px) {
+    #intro .intro-img img {
+        width: 80%;
+    }
+}
+@-webkit-keyframes up-down {
+    0% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+@keyframes up-down {
+    0% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
